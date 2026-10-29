@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexlink Telecom | Fibra Óptica y Radioenlaces</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- 1. ANIMACIÓN DE CARGA (LOADER) -->
+  <div id="loader-overlay">
+    <div class="loader-spinner"></div>
+    <small class="text-secondary">Conectando a la red troncal...</small>
+  </div>
+
+  <!-- 2. NAVBAR (BOOTSTRAP 5 CON MENÚ HAMBURGUESA) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#inicio">
+        <i class="bi bi-broadcast text-warning"></i>
+        <span>Nexlink <span class="text-secondary fw-normal">Telecom</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#infraestructura">Infraestructura</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3. HERO SECTION (CON ANIMACIÓN @KEYFRAMES DE FLUJO DE DATOS) -->
+  <header class="hero-section" id="inicio">
+    <div class="container pt-4">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <span class="badge bg-dark border border-secondary text-secondary mb-2">Servicios de Telecomunicaciones B2B</span>
+          <h1 class="display-5 fw-bold mb-3">Conectividad Troncal en <span class="text-success">Fibra Óptica</span> y <span class="text-warning">Radioenlaces</span></h1>
+          <p class="text-secondary mb-4">Ingeniería, tendido aéreo y canalizado de fibra óptica, montaje de torres de microondas y certificación de redes para empresas e industrias.</p>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between small text-secondary mb-1">
+              <span><i class="bi bi-activity text-success me-1"></i>Enlace Activo</span>
+              <span class="font-monospace text-light">10 Gbps SFP+ &bull; SLA 99.999%</span>
+            </div>
+            <div class="stream-bar"></div>
+          </div>
+          <div class="d-flex gap-2">
+            <a href="#servicios" class="btn btn-primary px-3 py-2">Ver Servicios</a>
+            <a href="#infraestructura" class="btn btn-secondary px-3 py-2">Ver Red (3D)</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="assets/hero_tecnico.jpg" alt="Técnico de telecomunicaciones" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 4. SERVICIOS (TRANSFORMACIONES 2D: ROTATE, SCALE, SKEW) -->
+  <section class="py-5" id="servicios">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold">Servicios Especializados</h2>
+        <p class="text-secondary small">Pase el cursor sobre cada tarjeta para interactuar con las transformaciones 2D.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="caja-2d caja-rotate">
+            <i class="bi bi-bezier2 fs-2 text-success mb-2 d-block"></i>
+            <h3 class="h5 fw-bold mb-2">Tendido de Fibra Óptica</h3>
+            <p class="text-secondary small mb-0">Despliegue troncal aéreo (ADSS) y subterráneo, armado de mufas y empalmes por fusión de alta precisión.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="caja-2d caja-scale">
+            <i class="bi bi-broadcast fs-2 text-warning mb-2 d-block"></i>
+            <h3 class="h5 fw-bold mb-2">Radioenlaces Microondas</h3>
+            <p class="text-secondary small mb-0">Estudio de línea de vista, montaje de mástiles y torres para conectividad inalámbrica punto a punto en bandas licenciadas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="caja-2d caja-skew">
+            <i class="bi bi-speedometer2 fs-2 text-info mb-2 d-block"></i>
+            <h3 class="h5 fw-bold mb-2">Certificación OTDR</h3>
+            <p class="text-secondary small mb-0">Auditoría reflectométrica, medición de pérdidas por inserción y certificación técnica bajo norma TIA/EIA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. INFRAESTRUCTURA (TRANSFORMACIÓN 3D FLIP) -->
+  <section class="py-5 bg-black bg-opacity-25 border-top border-bottom border-secondary border-opacity-25" id="infraestructura">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="h3 fw-bold">Infraestructura y Nivel de Servicio</h2>
+        <p class="text-secondary small">Pase el cursor sobre la tarjeta interactiva 3D para ver las garantías técnicas de red.</p>
+      </div>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="contenedor-3d">
+            <div class="tarjeta-3d">
+              <div class="cara-3d cara-front">
+                <span class="badge bg-success w-auto align-self-start">RED EN OPERACIÓN</span>
+                <div class="text-center my-auto">
+                  <i class="bi bi-diagram-3-fill fs-1 text-success d-block mb-2"></i>
+                  <h4 class="fw-bold mb-1">Nodo Troncal de Conectividad</h4>
+                  <p class="text-secondary small mb-0">Interconexión metropolitana de fibra óptica y radiofrecuencia</p>
+                </div>
+                <small class="text-warning"><i class="bi bi-arrow-repeat me-1"></i>Pase el cursor para girar</small>
+              </div>
+              <div class="cara-3d cara-back">
+                <span class="badge bg-warning text-dark w-auto align-self-start fw-bold">ACUERDO DE SERVICIO (SLA)</span>
+                <div class="my-auto">
+                  <h5 class="fw-bold mb-2">Garantías B2B</h5>
+                  <div class="row g-2 text-start small">
+                    <div class="col-6 p-2 border border-secondary border-opacity-25 rounded"><span class="text-muted d-block">Disponibilidad</span><strong class="text-warning">99.999% SLA</strong></div>
+                    <div class="col-6 p-2 border border-secondary border-opacity-25 rounded"><span class="text-muted d-block">Capacidad</span><strong class="text-warning">10 a 100 Gbps</strong></div>
+                    <div class="col-6 p-2 border border-secondary border-opacity-25 rounded"><span class="text-muted d-block">Atenuación</span><strong class="text-warning">&lt; 0.18 dB/km</strong></div>
+                    <div class="col-6 p-2 border border-secondary border-opacity-25 rounded"><span class="text-muted d-block">Monitoreo</span><strong class="text-warning">24/7/365 NOC</strong></div>
+                  </div>
+                </div>
+                <small class="text-muted">Supervisión en tiempo real</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="box-custom">
+            <h4 class="h5 fw-bold mb-3"><i class="bi bi-patch-check-fill text-warning me-2"></i>Respaldo Corporativo</h4>
+            <p class="text-secondary small mb-3">Ingenieros colegiados homologados para trabajos en altura, equipamiento calibrado OTDR y cuadrillas de respuesta rápida para emergencias de fibra óptica en menos de 2 horas.</p>
+            <ul class="list-unstyled small text-secondary mb-0 d-flex flex-column gap-2">
+              <li><i class="bi bi-check2-circle text-success me-2"></i>Certificación internacional de cableado estructurado.</li>
+              <li><i class="bi bi-check2-circle text-warning me-2"></i>Homologación ante operadoras de telecomunicaciones.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. NOSOTROS -->
+  <section class="py-5" id="nosotros">
+    <div class="container text-center">
+      <h2 class="h3 fw-bold mb-2">Sobre Nexlink Telecom</h2>
+      <p class="text-secondary small mb-4">Trayectoria comprobada en despliegue de infraestructura crítica a nivel nacional.</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-3"><div class="box-custom py-3"><h3 class="h4 fw-bold text-success mb-1">+5,200 km</h3><small class="text-secondary">Fibra Óptica</small></div></div>
+        <div class="col-6 col-md-3"><div class="box-custom py-3"><h3 class="h4 fw-bold text-warning mb-1">+1,450</h3><small class="text-secondary">Radioenlaces</small></div></div>
+        <div class="col-6 col-md-3"><div class="box-custom py-3"><h3 class="h4 fw-bold text-info mb-1">+380</h3><small class="text-secondary">Clientes B2B</small></div></div>
+        <div class="col-6 col-md-3"><div class="box-custom py-3"><h3 class="h4 fw-bold text-light mb-1">24/7/365</h3><small class="text-secondary">Soporte NOC</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FORMULARIO DE CONTACTO (BOOTSTRAP 5: FORM-CONTROL, MB-3, D-GRID GAP-2) -->
+  <section class="py-5 bg-black bg-opacity-25" id="contacto">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <div class="text-center mb-4">
+            <h2 class="h3 fw-bold mb-1">Solicitar Propuesta Técnica</h2>
+            <p class="text-secondary small">Complete sus datos para evaluar la viabilidad de su enlace.</p>
+          </div>
+          <div class="box-custom">
+            <form onsubmit="event.preventDefault(); alert('Solicitud enviada correctamente.');">
+              <div class="mb-3">
+                <label for="nombre" class="form-label small">Nombre o Razón Social</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Ing. Carlos Gómez / Empresa SAC" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label small">Correo Corporativo</label>
+                <input type="email" class="form-control" id="email" placeholder="contacto@empresa.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="servicio" class="form-label small">Servicio Requerido</label>
+                <select class="form-select" id="servicio" required>
+                  <option value="" selected disabled>Seleccione...</option>
+                  <option value="fibra">Tendido y Fusión de Fibra Óptica</option>
+                  <option value="radio">Radioenlace de Microondas</option>
+                  <option value="otdr">Auditoría y Certificación OTDR</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="mensaje" class="form-label small">Detalles del Proyecto</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Distancia aproximada, ancho de banda o ubicación..." required></textarea>
+              </div>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="reset" class="btn btn-secondary px-3 py-2">Limpiar Formulario</button>
+                <button type="submit" class="btn btn-primary px-3 py-2">Enviar Solicitud</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="text-center text-secondary">
+    <div class="container">&copy; 2026 Nexlink Telecom S.A.C. &bull; Servicios de Telecomunicaciones, Fibra Óptica y Radioenlaces.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    window.addEventListener('load', () => setTimeout(() => document.getElementById('loader-overlay').classList.add('fade-out'), 400));
+  </script>
+</body>
+</html>

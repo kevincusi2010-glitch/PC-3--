@@ -1,0 +1,114 @@
+/* ==========================================================================
+   NEXLINK TELECOMUNICACIONES S.A.C. | PC3 CSS AVANZADO
+   Paleta: Grafito (#0b0f15), Verde Foresta (#15803d) y Ámbar (#d97706)
+   ========================================================================== */
+:root {
+  --bg-dark: #0b0f15;
+  --bg-card: #151d28;
+  --border: #24303f;
+  --green: #15803d;
+  --amber: #d97706;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* 1. ANIMACIONES (@KEYFRAMES) Y LOADER */
+#loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-dark);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+#loader-overlay.fade-out { opacity: 0; visibility: hidden; }
+
+.loader-spinner {
+  width: 44px;
+  height: 44px;
+  border: 4px solid #1e293b;
+  border-top-color: var(--amber);
+  border-bottom-color: var(--green);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.stream-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--amber), var(--green));
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: streamPulse 2.5s infinite ease-in-out;
+}
+@keyframes streamPulse {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* 2. NAVBAR & HERO BOOTSTRAP 5 */
+.navbar-custom { background: #0c1118; border-bottom: 1px solid var(--border); }
+.hero-section { padding: 90px 0 60px; border-bottom: 1px solid var(--border); }
+.hero-img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; border: 1px solid var(--border); }
+
+/* 3. TRANSFORMACIONES 2D (HOVER + TRANSITION) */
+.caja-2d {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.8rem;
+  height: 100%;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.caja-rotate { border-top: 4px solid var(--green); }
+.caja-rotate:hover { transform: rotate(3deg); border-color: var(--green); }
+
+.caja-scale { border-top: 4px solid var(--amber); }
+.caja-scale:hover { transform: scale(1.06); border-color: var(--amber); }
+
+.caja-skew { border-top: 4px solid #38bdf8; }
+.caja-skew:hover { transform: translateY(-8px) skew(-2deg); border-color: #38bdf8; }
+
+/* 4. TRANSFORMACIONES 3D (PERSPECTIVE + PRESERVE-3D + ROTATEY) */
+.contenedor-3d { perspective: 1000px; height: 320px; cursor: pointer; }
+.tarjeta-3d {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.75s ease;
+  border-radius: 10px;
+}
+.contenedor-3d:hover .tarjeta-3d { transform: rotateY(180deg); }
+
+.cara-3d {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 1.8rem;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cara-front { background: linear-gradient(145deg, #151e2b, #0e141d); border-left: 4px solid var(--green); }
+.cara-back { background: linear-gradient(145deg, #1e2015, #14170e); border-left: 4px solid var(--amber); transform: rotateY(180deg); }
+
+/* 5. FORMULARIO & BOTONES BOOTSTRAP 5 */
+.box-custom { background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 2rem; }
+.form-control, .form-select { background: #0c1117 !important; border: 1px solid var(--border) !important; color: #fff !important; }
+.btn-primary { background: linear-gradient(135deg, var(--amber), #b45309) !important; border: none !important; font-weight: 600; }
+.btn-secondary { background: #24303e !important; border: 1px solid var(--border) !important; font-weight: 600; }
+footer { background: #080b0f; border-top: 1px solid var(--border); padding: 25px 0; font-size: 0.85rem; }
