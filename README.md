@@ -1,7 +1,8 @@
 # 📡 Nexlink Telecomunicaciones — Portafolio Interactivo
 > **Práctica Calificada N° 3 (PC3)**  
 > **Curso:** Hojas de Estilo en Cascada Avanzado  
-> **Docente:** Mg. Ing. CIP Hernán Francisco Peña Carne  
+> **Docente:** Mg. Ing. CIP Hernán Francisco Peña Carne 
+> **Alumno:** Keviin Smith Cusi Espinoza
 
 Este proyecto es una landing page corporativa responsiva desarrollada con **Bootstrap 5**, **Transformaciones CSS (2D y 3D)** y **Animaciones CSS (@keyframes)** para una empresa especializada en servicios de telecomunicaciones, tendido de fibra óptica y radioenlaces.
 
